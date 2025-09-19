@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
+import "../styles/style.css";
+
 const Layout = ({ children }) => {
   return (
     <div>
-      <nav style={{ background: "blue" }}>
-        <ul>
+      <div className="container_nav">
+        <ul className="nav">
           <li>Inicio</li>
           <li>Eventos</li>
           <Link to="/profile">profile</Link>
         </ul>
-      </nav>
+      </div>
       <main>{children}</main>
     </div>
   );
