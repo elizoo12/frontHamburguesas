@@ -37,48 +37,40 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  text-decoration: none;
 }
 
 .container_logo img{
-  width: 45px;
+  width: 50px;
 }
-
 
 .container_logo p {
   color: white;
   font-weight: bold;
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .container_perfil {
   display: flex;
   align-items: center;
-  /* Centra verticalmente si hay varios links */
   justify-content: center;
-  /* Centra horizontalmente */
   padding-right: 25px;
 }
 
 .container_perfil a {
   display: flex;
-  /* Hace que la imagen y el texto estén en columna */
   flex-direction: column;
-  /* Imagen arriba, texto debajo */
   align-items: center;
-  /* Centra horizontalmente dentro del link */
   text-decoration: none;
   color: #f8f8f8;
   gap: 5px;
-  /* Espacio entre imagen y texto */
   font-size: 1.3rem;
 }
 
 .container_perfil img {
   width: 45px;
-  height: 45px;
   border-radius: 50%;
-  /* Imagen redonda */
   display: block;
 }
 /* --------------------------------------------------------------------------------------- HOME -------------------------------------------*/
@@ -181,4 +173,50 @@ body {
 .section2 p {
   font-size: 1.1rem;
   line-height: 1.5;
+}
+
+
+/* ----------------------------------------------------------------------------------------- Error Page------------------------------------ */
+.error_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+    background-color: rgba(17, 17, 17, 0.85);
+    box-sizing: border-box;
+}
+
+.error_content h1 {
+  font-size: 8rem;
+  margin: 0;
+  color: #FF725E;
+}
+
+.error_content h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #f8f8f8;
+}
+
+.error_content p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+    color: #f8f8f8;
+}
+
+.btn_home {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #FF725E;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn_home:hover {
+  background-color: #ff917f;
 }
