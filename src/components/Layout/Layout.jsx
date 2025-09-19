@@ -8,15 +8,14 @@ const Layout = ({ children }) => {
     <div>
       <div className="container_nav">
         <ul className="nav">
-          <li>Inicio</li>
-          <li>Eventos</li>
-          <li>Item 1</li>
+          <li><Link to="/">  Inicio </Link></li>
+          <li><Link to="/events">Eventos</Link></li>
           {user ? (
-            <Link to="/profile">Perfil</Link>
+            <li><Link to="/profile">Perfil</Link></li>
           ) : (
             <>
-              <Link to="/login">Entrar</Link>
-              <Link to="/profile">Perfil</Link>
+              <li><Link to="/login">Entrar</Link></li>
+              <li><Link to="/profile">Perfil</Link></li>
             </>
           )}
         </ul>
