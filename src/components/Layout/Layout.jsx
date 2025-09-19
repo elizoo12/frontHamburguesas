@@ -10,12 +10,12 @@ const Layout = ({ children }) => {
         <ul className="nav">
           <li>Inicio</li>
           <li>Eventos</li>
+          <li>Item 1</li>
           {user ? (
             <Link to="/profile">Perfil</Link>
           ) : (
             <>
-              <Link to="/login">Inicio de Sesión</Link>
-              <Link to="/register">Registro</Link>
+              <Link to="/login">Entrar</Link>
               <Link to="/profile">Perfil</Link>
             </>
           )}

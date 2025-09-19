@@ -18,44 +18,79 @@ body {
 }
 
 /* -----------------------------------------------------------------------------------Layout ----------------------------------------------*/
+/* Navbar container */
 .container_nav {
   width: 100%;
-  padding: 20px;
-  background-color: #ffffff;
-  /* blanco suave */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 15px 10%;
+  background-color: #111111;
+  /* fondo oscuro */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Links de navbar */
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   list-style: none;
-  justify-content: center;
 }
 
-.nav li a {
+.nav li,
+.nav a {
+  color: #f8f8f8;
+  /* texto blanco */
   text-decoration: none;
-  color: #111111;
-  /* negro suave */
-  font-weight: 500;
-  transition: color 0.3s;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 6px;
+  position: relative;
+  transition: color 0.3s ease;
+  /* solo color para no mover nada */
 }
 
-.nav li a:hover {
-  color: #555555;
-  /* gris oscuro al hover */
+/* Subrayado animado desde el centro */
+.nav li::after,
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #FF725E;
+  /* color de acento */
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
 }
 
+/* Hover: subrayado y color */
+.nav li:hover::after,
+.nav a:hover::after {
+  width: 100%;
+  /* subrayado crece hacia los lados */
+}
+
+.nav li:hover,
+.nav a:hover {
+  color: #FF725E;
+  /* texto cambia a color de acento */
+}
 
 /* --------------------------------------------------------------------------------------- HOME -------------------------------------------*/
+
 .sectionHome {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 10%;
-  background-color: black;
+  padding: 80px 10%;
+  background-color: rgba(17, 17, 17, 0.85);
+  /* fondo oscuro, semi-transparente */
   gap: 40px;
-  border-radius: 10px;
+  color: #f8f8f8;
+  /* texto blanco por defecto */
 }
 
 .sectionHome div:first-child {
@@ -64,14 +99,15 @@ body {
 
 .sectionHome h1 {
   font-size: 3rem;
-  color: #111111;
+  color: #FF725E;
+  /* color de acento */
   margin-bottom: 20px;
 }
 
 .sectionHome h3 {
   font-size: 1.5rem;
-  color: #555555;
-
+  color: #f8f8f8;
+  /* subtítulo blanco suave */
 }
 
 .sectionHome div:last-child {
@@ -80,22 +116,28 @@ body {
   justify-content: center;
 }
 
+/* Imagen SVG sin fondo */
 .sectionHome img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  /* sombra ligera para destacar */
 }
 
-/* SECTION 2 */
-div:nth-child(3) {
-  padding: 50px 10%;
+/* ============================
+   Section 2
+============================ */
+.section2 {
+  padding: 60px 10%;
   text-align: center;
   background-color: #f5f5f5;
-  border-radius: 10px;
-  margin-top: 30px;
+  border-radius: 12px;
+  margin-top: 50px;
 }
 
-div:nth-child(3) h2 {
+.section2 h2 {
   font-size: 2rem;
   color: #111111;
 }
