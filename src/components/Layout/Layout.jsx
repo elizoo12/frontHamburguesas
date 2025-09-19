@@ -7,18 +7,23 @@ const Layout = ({ children }) => {
   return (
     <div>
       <div className="container_nav">
-        <ul className="nav">
-          <li><Link to="/">  Inicio </Link></li>
-          <li><Link to="/events">Eventos</Link></li>
+        <div className="container_logo">
+          <img src="src/assets/png/logo.png" alt="LogoImágen" />
+          <p>AuraEvents</p>
+        </div>
+        <div className="container_perfil">
           {user ? (
-            <li><Link to="/profile">Perfil</Link></li>
+            <Link to="/profile">
+              <img src="src/assets/png/profile.png" alt="ImágenPerfil" />
+              Mis datos
+            </Link>
           ) : (
-            <>
-              <li><Link to="/login">Entrar</Link></li>
-              <li><Link to="/profile">Perfil</Link></li>
-            </>
+            <Link to="/login">
+              <img src="src/assets/png/login.png" alt="ImágenPerfil" />
+              Entrar
+            </Link>
           )}
-        </ul>
+        </div>
       </div>
       <main>{children}</main>
     </div>

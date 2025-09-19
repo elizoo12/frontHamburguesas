@@ -11,9 +11,9 @@ const Router = () => (
       <Route index element={<Home />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} /> 
-      <Route path="/events" element={<Events />} /> 
-      <Route path="*" element={<ErrorPage/>} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/events" element={<Events />} />
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   </BrowserRouter>
 );

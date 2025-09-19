@@ -21,64 +21,66 @@ body {
 /* Navbar container */
 .container_nav {
   width: 100%;
-  padding: 15px 10%;
+  padding: 20px ;
+  padding-left: 40px;
   background-color: #111111;
-  /* fondo oscuro */
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-/* Links de navbar */
-.nav {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-}
-
-.nav li,
-.nav a {
+  justify-content: space-between;
   color: #f8f8f8;
-  /* texto blanco */
+}
+
+.container_logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container_logo img{
+  width: 45px;
+}
+
+
+.container_logo p {
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.container_perfil {
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente si hay varios links */
+  justify-content: center;
+  /* Centra horizontalmente */
+  padding-right: 25px;
+}
+
+.container_perfil a {
+  display: flex;
+  /* Hace que la imagen y el texto estén en columna */
+  flex-direction: column;
+  /* Imagen arriba, texto debajo */
+  align-items: center;
+  /* Centra horizontalmente dentro del link */
   text-decoration: none;
-  font-size: 1.1rem;
-  cursor: pointer;
-  padding: 12px 18px;
-  border-radius: 6px;
-  position: relative;
-  transition: color 0.3s ease;
-  /* solo color para no mover nada */
+  color: #f8f8f8;
+  gap: 5px;
+  /* Espacio entre imagen y texto */
+  font-size: 1.3rem;
 }
 
-/* Subrayado animado desde el centro */
-.nav li::after,
-.nav a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: #FF725E;
-  /* color de acento */
-  transform: translateX(-50%);
-  transition: width 0.3s ease;
+.container_perfil img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  /* Imagen redonda */
+  display: block;
 }
-
-/* Hover: subrayado y color */
-.nav li:hover::after,
-.nav a:hover::after {
-  width: 100%;
-  /* subrayado crece hacia los lados */
-}
-
-.nav li:hover,
-.nav a:hover {
-  color: #FF725E;
-  /* texto cambia a color de acento */
-}
-
 /* --------------------------------------------------------------------------------------- HOME -------------------------------------------*/
 
 .sectionHome {
@@ -87,57 +89,96 @@ body {
   align-items: center;
   padding: 80px 10%;
   background-color: rgba(17, 17, 17, 0.85);
-  /* fondo oscuro, semi-transparente */
-  gap: 40px;
+  gap: 60px;
   color: #f8f8f8;
-  /* texto blanco por defecto */
 }
 
-.sectionHome div:first-child {
+.sectionHome-text {
   flex: 1;
 }
 
 .sectionHome h1 {
   font-size: 3rem;
   color: #FF725E;
-  /* color de acento */
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .sectionHome h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #f8f8f8;
-  /* subtítulo blanco suave */
+  margin-bottom: 20px;
 }
 
-.sectionHome div:last-child {
+.sectionHome p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #FF725E;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ff917f;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #FF725E;
+  border: 2px solid #FF725E;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #FF725E;
+  color: #fff;
+}
+.sectionHome-image {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-/* Imagen SVG sin fondo */
-.sectionHome img {
+.sectionHome-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
-  padding: 0;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  /* sombra ligera para destacar */
+  background: transparent;
 }
 
-/* ============================
-   Section 2
-============================ */
 .section2 {
   padding: 60px 10%;
   text-align: center;
   background-color: #f5f5f5;
   border-radius: 12px;
   margin-top: 50px;
+  color: #111111;
 }
 
 .section2 h2 {
-  font-size: 2rem;
-  color: #111111;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.section2 p {
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
