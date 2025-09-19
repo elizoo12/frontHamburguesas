@@ -3,7 +3,7 @@ import "../styles/style.css";
 import { useUserContext } from "../providers/UserProvider";
 
 const Layout = ({ children }) => {
-  const { user } = useUserContext();
+  const { user, setUser } = useUserContext();
   return (
     <div>
       <div className="container_nav">

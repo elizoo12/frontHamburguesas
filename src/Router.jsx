@@ -1,15 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
-import Layout from "./components/Layout";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 const Router = () => (
   <BrowserRouter>
-  <Layout>
     <Routes>
       <Route index element={<Home />} />
       <Route path="/profile" element={<Profile />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
     </Routes>
-  </Layout>
   </BrowserRouter>
 );
 
