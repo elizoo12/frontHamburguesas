@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import "../styles/style.css";
-import { useUserContext } from "../providers/UserProvider";
+import { useUserContext } from "../../providers/UserProvider";
+import "../Layout/style.css";
 
 const Layout = ({ children }) => {
-  const { user, setUser } = useUserContext();
+  const { user } = useUserContext();
   return (
     <div>
       <div className="container_nav">

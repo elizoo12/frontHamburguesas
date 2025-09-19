@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -12,7 +11,13 @@
   font-style: normal;
 }
 
-/* NAV */
+/* BODY */
+body {
+  background-color: #f5f5f5;
+  color: #111111;
+}
+
+/* -----------------------------------------------------------------------------------Layout ----------------------------------------------*/
 .container_nav {
   width: 100%;
   padding: 20px;
@@ -41,25 +46,16 @@
   /* gris oscuro al hover */
 }
 
-/* BODY */
-body {
-  background-color: #f5f5f5;
-  /* gris claro */
-  color: #111111;
-  /* negro suave */
-}
 
-/* SECTION HOME */
+/* --------------------------------------------------------------------------------------- HOME -------------------------------------------*/
 .sectionHome {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 60px 10%;
-  background-color: #ffffff;
-  /* blanco para mayor contraste suave */
+  background-color: black;
   gap: 40px;
   border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .sectionHome div:first-child {
@@ -69,14 +65,13 @@ body {
 .sectionHome h1 {
   font-size: 3rem;
   color: #111111;
-  /* negro suave */
   margin-bottom: 20px;
 }
 
 .sectionHome h3 {
   font-size: 1.5rem;
   color: #555555;
-  /* gris oscuro */
+
 }
 
 .sectionHome div:last-child {
@@ -89,7 +84,6 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* SECTION 2 */
@@ -97,7 +91,6 @@ div:nth-child(3) {
   padding: 50px 10%;
   text-align: center;
   background-color: #f5f5f5;
-  /* gris claro */
   border-radius: 10px;
   margin-top: 30px;
 }
@@ -105,5 +98,4 @@ div:nth-child(3) {
 div:nth-child(3) h2 {
   font-size: 2rem;
   color: #111111;
-  /* negro suave */
 }
