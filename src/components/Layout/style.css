@@ -55,7 +55,6 @@ body {
 
 .link_container_logo:hover p {
   color: #FF725E;
-  text-decoration:line-through;
 }
 .container_perfil {
   display: flex;
