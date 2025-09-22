@@ -7,8 +7,8 @@ const Layout = ({ children }) => {
   return (
     <div>
       <div className="container_nav">
-        <div className="container_logo">
-          <Link to="/" className="container_logo">
+        <div>
+          <Link to="/" className="link_container_logo">
             <img src="src/assets/png/logo.png" alt="LogoImágen" />
             <p>AuraEvents</p>
           </Link>
