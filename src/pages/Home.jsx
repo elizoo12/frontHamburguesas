@@ -33,11 +33,15 @@ const Home = () => {
       </div>
 
       <div className="section2">
-        <div>
-          <h2>Lo que hace especial a AuraEvents</h2>
+        <div className="container_section2">
+          <h2>
+            Lo que hace especial a <span>AuraEvents</span>
+          </h2>
           <p>
-            Disfruta de una experiencia única para descubrir, organizar y vivir
-            tus eventos de manera más fácil y emocionante.
+            Con AuraEvents tienes todo lo que necesitas para descubrir nuevos
+            planes, organizar tus propios eventos favoritos y vivir cada evento
+            sin complicaciones. Queremos que disfrutes más, te preocupes menos y
+            hagas de cada experiencia un recuerdo especial.
           </p>
 
           <div className="advantages">
@@ -51,8 +55,8 @@ const Home = () => {
             <div className="advantage">
               <h3>📅 Organización sencilla</h3>
               <p>
-                Guarda tus favoritos, crea recordatorios y nunca pierdas un
-                evento importante.
+                Guarda tus favoritos, crea recordatorios personalizados y nunca
+                pierdas un evento importante en tu agenda.
               </p>
             </div>
             <div className="advantage">
