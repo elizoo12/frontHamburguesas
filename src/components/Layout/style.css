@@ -91,13 +91,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 10%;
+  padding: 60px 7%;
   background-color: rgba(17, 17, 17, 0.85);
   gap: 60px;
   color: #f8f8f8;
 }
 
-.sectionHome-text {
+.sectionHome_text {
   flex: 1;
 }
 
@@ -158,13 +158,13 @@ body {
   background-color: #FF725E;
   color: #fff;
 }
-.sectionHome-image {
+.sectionHome_image {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-.sectionHome-image img {
+.sectionHome_image img {
   max-width: 100%;
   height: auto;
   background: transparent;
@@ -241,26 +241,96 @@ body {
   line-height: 1.6;
 }
 
-
 .section3 {
-  padding: 60px 10%;
-  text-align: center;
+  display: flex;
+  padding: 60px 7%;
+  padding-bottom: 0px;
   background-color: rgba(17, 17, 17, 0.85);
   color: #f8f8f8;
+  gap: 40px;
 }
 
-.section3 h2 {
-  font-size: 2.2rem;
+.section3_text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.section3_text h2 {
+  font-size: 2.4rem;
   margin-bottom: 15px;
+  line-height: 1.2;
 }
 
-.section3 p {
+.categories_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;;
+  gap: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+hr{
+  border: 1px solid #FF725E;
+}
+
+.category_box {
+  color: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+.category_box:nth-child(1) {
+  background-color: rgba(180, 51, 51, 0.15);
+  border-color: rgba(180, 51, 51, 0.7);
+}
+
+.category_box:nth-child(2) {
+  background-color: rgba(51, 135, 180, 0.15);
+  border-color: rgba(51, 135, 180, 0.7);
+}
+
+.category_box:nth-child(3) {
+  background-color: rgba(90, 180, 51, 0.15);
+  border-color: rgba(90, 180, 51, 0.7);
+}
+
+.category_box:nth-child(4) {
+  background-color: rgba(169, 180, 51, 0.15);
+  border-color: rgba(169, 180, 51, 0.7);
+}
+
+.category_box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.7);
+  
+}
+
+.section3_text p {
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 1.7;
+  margin-top: 20px;
 }
 
+.section3_image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
 
-/* ----------------------------------------------------------------------------------------- Error Page------------------------------------ */
+.section3_image img {
+  max-width: 100%;
+  height: 85%;
+}
+
+/* -------------------------------------------------------------------------- Error Page------------------------------------ */
 .error_page {
   display: flex;
   justify-content: center;
@@ -298,7 +368,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn_home:hover {

@@ -8,13 +8,13 @@ const Home = () => {
     <>
       <Layout />
       <div className="sectionHome">
-        <div className="sectionHome-text">
+        <div className="sectionHome_text">
           <h1>Eventos que Inspiran</h1>
           <h3>Conecta, aprende y disfruta experiencias únicas</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Repellendus doloremque voluptates, impedit obcaecati reiciendis sint
-            inventore beatae ad exercitationem explicabo!
+            Explora, conecta y participa en los mejores eventos cerca de ti.
+            Descubre experiencias únicas, comparte momentos con otros y disfruta
+            de cada plan sin complicaciones.
           </p>
 
           <div className="sectionHome_buttons">
@@ -27,8 +27,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="sectionHome-image">
-          <img src="src/assets/images/svg/sectionHome.svg" alt="Imágen Section Home" />
+        <div className="sectionHome_image">
+          <img
+            src="src/assets/images/svg/sectionHome.svg"
+            alt="Imágen Section Home"
+          />
         </div>
       </div>
 
@@ -38,10 +41,10 @@ const Home = () => {
             Lo que hace especial a <span>AuraEvents</span>
           </h2>
           <p>
-            Con AuraEvents tienes todo lo que necesitas para descubrir nuevos
-            planes, organizar tus propios eventos favoritos y vivir cada evento
-            sin complicaciones. Queremos que disfrutes más, te preocupes menos y
-            hagas de cada experiencia un recuerdo especial.
+            Con <strong>AuraEvents</strong> tienes todo lo que necesitas para
+            descubrir nuevos planes, organizar tus propios eventos favoritos y
+            vivir cada evento sin complicaciones. Queremos que disfrutes más, te
+            preocupes menos y hagas de cada experiencia un recuerdo especial.
           </p>
 
           <div className="advantages">
@@ -71,11 +74,40 @@ const Home = () => {
       </div>
 
       <div className="section3">
-        <h2>Explora nuestras categorías</h2>
-        <p>
-          Descubre todos los tipos de eventos que ofrecemos y encuentra los que
-          más te interesan.
-        </p>
+        <div className="section3_text">
+          <h2>Explora nuestra variedad de categorías</h2>
+          <hr />
+          <div className="categories_box">
+            <div className="category_box">
+              <p>Categoría 1</p>
+            </div>
+            <div className="category_box">
+              <p>Categoría 2</p>
+            </div>
+            <div className="category_box">
+              <p>Categoría 3</p>
+            </div>
+            <div className="category_box">
+              <p>Categoría 4</p>
+            </div>
+          </div>
+          <p>
+            Encuentra planes que realmente te emocionen: desde conciertos y
+            talleres hasta festivales y quedadas locales. Guarda tus favoritos,
+            filtra por lo que te interesa y disfruta de cada experiencia sin
+            complicaciones. <br />
+            <br />
+            Con AuraEvents, vivir tus eventos nunca había sido tan fácil y
+            divertido.
+          </p>
+        </div>
+
+        <div className="section3_image">
+          <img
+            src="src/assets/images/svg/section3.svg"
+            alt="Ilustración de personas realizando una de muchas actividades"
+          />
+        </div>
       </div>
     </>
   );

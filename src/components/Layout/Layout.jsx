@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
             </Link>
           ) : (
             <Link to="/login">
-              <img src="src/assets/png/login.png" alt="ImágenPerfil" />
+              <img src="src/assets/images/png/login.png" alt="ImágenPerfil" />
               Entrar
             </Link>
           )}
