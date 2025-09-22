@@ -1,3 +1,5 @@
+import { useRef, useState } from "react";
+
 const Register = () => {
 
 
@@ -12,10 +14,8 @@ const Register = () => {
     <input type="text" placeholder="username" ref={usernameRef} />
     <input type={viewPassword?"text":"password"} placeholder="password" ref={passwordRef} /> <button onClick={()=>{setViewPassword(!viewPassword)}}>{viewPassword?"ocult password":"show password"}</button>
      <input type={viewPassword?"text":"password"} placeholder="confirm password" ref={passwordRef} />
-    <button>Login</button>
+    <button>rGISTER</button>
 
-    <p>Not account yet?</p>
-    <Link to="/register">Register</Link>
     </>
   );
 };
