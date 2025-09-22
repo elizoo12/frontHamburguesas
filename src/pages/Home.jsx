@@ -28,7 +28,7 @@ const Home = () => {
         </div>
 
         <div className="sectionHome-image">
-          <img src="src/assets/svg/sectionHome.svg" alt="Imágen Section Home" />
+          <img src="src/assets/images/svg/sectionHome.svg" alt="Imágen Section Home" />
         </div>
       </div>
 

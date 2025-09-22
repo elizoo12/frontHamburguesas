@@ -55,6 +55,7 @@ body {
 
 .link_container_logo:hover p {
   color: #FF725E;
+  text-decoration:line-through;
 }
 .container_perfil {
   display: flex;
@@ -303,3 +304,6 @@ body {
 .btn_home:hover {
   background-color: #ff917f;
 }
+
+
+/*----------------------------------------------------------------Profile---------------------------------------------------------------------*/

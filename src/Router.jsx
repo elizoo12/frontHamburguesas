@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Events from "./pages/Events";
 import ErrorPage from "./pages/ErrorPage";
+
 const Router = () => (
   <BrowserRouter>
     <Routes>
