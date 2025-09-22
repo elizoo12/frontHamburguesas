@@ -91,7 +91,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 60px 7%;
-  background-color: rgba(17, 17, 17, 0.85);
+  background-color: rgba(45, 45, 45, 0.85);
   gap: 60px;
   color: #f8f8f8;
 }
@@ -244,7 +244,7 @@ body {
   display: flex;
   padding: 60px 7%;
   padding-bottom: 0px;
-  background-color: rgba(17, 17, 17, 0.85);
+  background-color: rgba(45, 45, 45, 0.85);
   color: #f8f8f8;
   gap: 40px;
 }
