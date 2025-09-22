@@ -16,3 +16,8 @@ export const login = async (username, password) => {
     instance.defaults.headers.common.Authorization = `Bearer ${response.data.resp}`;
 
 }
+
+export const getUser = async (name) => {
+const user = await instance.get("/user/"+name);
+console.log(user.data);
+return user.data}
