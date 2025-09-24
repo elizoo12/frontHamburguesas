@@ -427,16 +427,14 @@ box-shadow: inset 10px 0 10px -10px rgba(0, 0, 0, 0.8);
   background-color: #FF725E;
   cursor: pointer;
   transition: 0.3s;
+    text-decoration: none;
+      color: #f8f8f8;
 }
 
 .containerLogin_GoHome:hover {
   background-color: #ff917f;
   transform: translateY(-4px);
   transition: 0.3s;
-}
-.containerLogin_GoHome a{
-  text-decoration: none;
-  color: #f8f8f8;
 }
 
 .containerLogin h2 {
@@ -473,7 +471,8 @@ box-shadow: inset 10px 0 10px -10px rgba(0, 0, 0, 0.8);
 
 .containerInputPassword label{
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px; /*También afecta al Register*/
 }
 
 .containerInputPassword input {
@@ -488,6 +487,7 @@ box-shadow: inset 10px 0 10px -10px rgba(0, 0, 0, 0.8);
   top: 58%;
   cursor: pointer;
   font-size: 1.2rem;
+  user-select: none;
 }
 
 .containerLogin button {
@@ -530,12 +530,142 @@ box-shadow: inset 10px 0 10px -10px rgba(0, 0, 0, 0.8);
   transform: scale(1.06);
 }
 
-
 .hrLogin{
   border: 2px solid rgba(255, 114, 94, 0.5);
   margin-bottom: 0.8rem;
 }
 
+/*--------------------------------------------------------------Register-------------------------------------------------------*/
+.generalContainerRegister {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+  background-color: rgba(33, 33, 33, 0.95);
+  margin: 0;
+  padding: 0;
+}
+
+.containerRegister {
+  flex: 1;
+    background: #f8f8f8;
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    box-shadow: inset -10px 0 10px -10px rgba(0, 0, 0, 0.8);
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.containerRegister h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  color: #111111;
+  letter-spacing: 1px;
+}
+
+.containerRegister label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.containerRegister input {
+  padding: 0.8rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.containerRegister input:focus {
+  border-color: #FF725E;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 114, 94, 0.4);
+  transform: scale(1.01);
+}
+
+.containerRegister_GoHome {
+  display: inline-block;
+  margin-right: auto;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #FF725E;
+  cursor: pointer;
+  transition: 0.3s;
+    text-decoration: none;
+      color: #f8f8f8;
+}
+
+.containerRegister_GoHome:hover {
+  background-color: #ff917f;
+  transform: translateY(-4px);
+  transition: 0.3s;
+}
+
+.containerRegister_ImgLogo {
+  margin: auto;
+}
+
+.containerRegister_ImgLogo>img {
+  width: 75px;
+}
+
+.hrRegister {
+  border: 2px solid rgba(255, 114, 94, 0.5);
+  margin-bottom: 0.8rem;
+}
+
+.containerRegister button {
+  padding: 0.95rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #FF725E;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(255, 114, 94, 0.3);
+  margin-top: 20px;
+}
+
+.containerRegister button:hover {
+  background-color: #ff917f;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 114, 94, 0.45);
+}
+
+.containerInputPassword2 {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.containerInputPassword2 label {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.containerInputPassword2 input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.containerInputPassword2 .iconoInputPassword {
+  position: absolute;
+  right: 15px;
+  top: 58%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  user-select: none;
+}
 /*--------------------------------------------------------------Footer---------------------------------------------------------*/
 .container_footer {
   width: 100%;

@@ -19,5 +19,8 @@ export const login = async (username, password) => {
 
 export const getUser = async (name) => {
 const user = await instance.get("/user/"+name);
-console.log(user.data);
 return user.data}
+
+// Acabar Create User, hay que cambiar campos de entrada y que mandamos
+
+// export const createUser = async (campos) => await instance.post("/create",{campos});

@@ -21,13 +21,13 @@ const Login = () => {
           />
         </div>
         <div className="containerLogin">
-          <div className="containerLogin_GoHome">
-            <Link to="/">↩ Inicio</Link>
-          </div>
+          <Link to="/" className="containerLogin_GoHome">
+            ↩ Inicio
+          </Link>
           <div className="containerLogin_ImgLogo">
             <img src="src/assets/images/png/logoLogin.png" />
           </div>
-          <h2>Iniciar Sesión</h2>
+          <h2>Inicia Sesión</h2>
           <hr className="hrLogin" />
           <label>Nombre de Usuario</label>
           <input type="text" placeholder="usuario123" ref={usernameRef} />
