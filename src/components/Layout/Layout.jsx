@@ -28,6 +28,11 @@ const Layout = ({ children }) => {
         </div>
       </div>
       <main>{children}</main>
+      <div className="container_footer">
+        <div>
+          <p>© 2025 AuraEvents. Todos los derechos reservados.</p>
+        </div>
+      </div>
     </div>
   );
 };
