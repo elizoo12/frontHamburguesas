@@ -38,7 +38,7 @@ const Home = () => {
         <div className="section2">
           <div className="container_section2">
             <h2>
-              Lo que hace especial a <span>AuraEvents</span>
+              HLo que hace especial a <span>AuraEvents</span>
             </h2>
             <p>
               Con <strong>AuraEvents</strong> tienes todo lo que necesitas para
