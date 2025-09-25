@@ -12,7 +12,6 @@ export const login = async (username, password) => {
             Authorization: "basic " + token,
         },
     });
-    console.log(response)
     instance.defaults.headers.common.Authorization = `Bearer ${response.data.resp}`;
 
 }

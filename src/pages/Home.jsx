@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import Layout from "../components/Layout/Layout";
 import { useUserContext } from "../providers/UserProvider";
+import { useEffect } from "react";
 
 const Home = () => {
-  const { user } = useUserContext();
+  const { user,setUser } = useUserContext();
+  useEffect(()=>{
+    if(!user){
+      setUser(localStorage.getItem("user"))
+    }
+  },[])
   return (
     <>
       <Layout>

@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import "../assets/stylesComponents/profile.css";
+import { useUserContext } from "../providers/UserProvider";
 
 const Profile = () => {
   const [userData, setUserData] = useState();
-
-  useEffect(() => {}, []);
+  const {user,setUser}=useUserContext();
+  useEffect(() => {
+  }, []);
 
   return (
     <>
