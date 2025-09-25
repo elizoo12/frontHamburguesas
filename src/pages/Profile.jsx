@@ -6,8 +6,11 @@ import { useUserContext } from "../providers/UserProvider";
 
 const Profile = () => {
   const [userData, setUserData] = useState();
-  const {user,setUser}=useUserContext();
+  const { user, setUser } = useUserContext();
   useEffect(() => {
+    if (!user) {
+      setUser(localStorage.getItem("user"));
+    }
   }, []);
 
   return (
