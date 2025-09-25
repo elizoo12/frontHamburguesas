@@ -51,6 +51,7 @@ const Login = () => {
               const loggedUser = await getUser(usernameRef.current.value);
               setUser(loggedUser);
               navigate("/profile");
+              localStorage.setItem("user",loggedUser)
             }}
           >
             Acceder
