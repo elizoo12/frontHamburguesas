@@ -14,7 +14,9 @@ const Register = () => {
     <input type="text" placeholder="username" ref={usernameRef} />
     <input type={viewPassword?"text":"password"} placeholder="password" ref={passwordRef} /> <button onClick={()=>{setViewPassword(!viewPassword)}}>{viewPassword?"ocult password":"show password"}</button>
      <input type={viewPassword?"text":"password"} placeholder="confirm password" ref={passwordRef} />
-    <button>rGISTER</button>
+     <input type="date" name="" id="" />
+     <input type="text" name="" id="" />
+    <button>register</button>
 
     </>
   );

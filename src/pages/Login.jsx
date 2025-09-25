@@ -14,7 +14,7 @@ const Login = () => {
     <input type="text" placeholder="username" ref={usernameRef} />
     <input type={viewPassword?"text":"password"} placeholder="password" ref={passwordRef} /> <button onClick={()=>{setViewPassword(!viewPassword)}}>{viewPassword?"ocult password":"show password"}</button>
     <button
-    onClick={async()=>await login(usernameRef.current.value,passwordRef.current.value)}
+    onClick={()=> login(usernameRef.current.value,passwordRef.current.value)}
     >Login</button>
 
     <p>Not account yet?</p>
